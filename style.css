@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    justify-content: center;
+    background: #e8ecf3;
+}
+
+.container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container h1{
+    margin-top: 2rem;
+    text-align: center;
+}
+.palette-box-container{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.palette{
+    background: #fff;
+    padding: .3rem;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.palette:hover{
+    transform: translateY(-10px);
+    box-shadow: -1px 6px 8px 0px rgba(179,173,173,0.75);
+-webkit-box-shadow: -1px 6px 8px 0px rgba(179,173,173,0.75);
+-moz-box-shadow: -1px 6px 8px 0px rgba(179,173,173,0.75);
+}
+.palette span{
+    font-weight: 450;
+    margin-top: .5rem;
+    display: inline-block;
+}
+.palette > div{
+    height: 140px;
+    width: 110px;
+    border-radius: 5px 5px 0 0;
+}
+
+.color-1{
+    background: #c1f7dc;
+}
+.color-2{
+    background: #C3D2D5;
+}
+.color-3{
+    background: #BDA0BC;
+}
+.color-4{
+    background: #A2708A;
+}
+.color-5{
+    background: #824670;
+}
+
+.button{
+    margin-top: 4rem;
+}
+.main-btn{
+    padding:1rem 4.5rem;
+    background: #7e6cca;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+p.tip-text{
+    font-size: .8rem;
+    font-weight: 500;
+    margin-top: .8em;
+    color: #292a2b;
+}
+.bottom-div{
+    margin-top: 5rem;
+    background: #fff;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+}
+
+.bottom-div p{
+    font-size: .7rem;
+    color: #292a2b;
+}
+
+@media (max-width : 800px){
+    .container{
+        width: 100%;
+    }
+    .container h1{
+        font-size: 1.5rem;
+    }
+    .palette-box-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bottom-div{
+        margin-bottom: 2rem;
+    }
+}
+
+.notif-class{
+    color: #fff;
+    background: #848688;
+    border-radius: 25px;
+    font-size: .7rem;
+    position: absolute;
+    /* left: 41%; */
+    padding: .2rem 1rem;
+    top: 10px;
+    text-align: center;
+}
